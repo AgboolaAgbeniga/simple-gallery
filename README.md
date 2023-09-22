@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Simple Gallery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![App Screenshot](./screenshot.png)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Simple Gallery is a web application that allows authenticated users to access and manage a gallery of images fetched from the Unsplash API. Users can search for images by keywords and rearrange the order of images using drag-and-drop functionality. This README provides an overview of the project, setup instructions, and usage guidelines.
 
-### `npm start`
+**Live Demo:** [Simple Gallery](https://simple-gallery-gamma.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Authentication: Users can log in using their email and password. Only authenticated users can access the gallery.
+- Gallery: Displays a collection of images fetched from the Unsplash API.
+- Search: Users can search for images by entering keywords in the search box.
+- Drag and Drop: Allows users to rearrange the order of images in the gallery using drag-and-drop functionality.
 
-### `npm run build`
+## Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before you begin, ensure you have met the following requirements:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js: Make sure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
+- Firebase Account: You need a Firebase project for authentication. Create one at [Firebase](https://firebase.google.com/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+   git clone https://github.com/your-username/simple-gallery.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navigate to the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+   cd simple-gall2ery
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install dependencies:
 
-## Learn More
+   ```bash
+   npm install
+4. Set up Firebase:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Create a Firebase project on the Firebase Console.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. Set up Firebase Authentication with email and password.
 
-### Code Splitting
+7. Create a .env file in the project root and add your Firebase configuration:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```makefile
+   REACT_APP_FIREBASE_API_KEY=your-api-key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
+   REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
+   REACT_APP_FIREBASE_APP_ID=your-app-id
+   Replace your-api-key, your-auth-domain, and other values with your Firebase project details.
 
-### Analyzing the Bundle Size
+8. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm start
+The app will be available at http://localhost:3000.
 
-### Making a Progressive Web App
+## Usage
+- Open the app in your web browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Log in using the provided test credentials:
+   ```
+   Username: user@example.com
+   Password: 1Password
 
-### Advanced Configuration
+- Explore the gallery, search for images, and try the drag-and-drop functionality to rearrange images.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Enjoy using Simple Gallery!
 
-### Deployment
+# Contributing
+Contributions are welcome! To contribute to this project, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Fork the repository.
 
-### `npm run build` fails to minify
+- Create a new branch for your feature or bug fix:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   git checkout -b feature/your-feature-name
+- Make your changes and commit them:
+
+   ```
+   git commit -m "Add your commit message here"
+
+- Push your changes to your forked repository:
+   ```
+   git push origin feature/your-feature-name
+- Open a pull request to the main repository.
+
+Your contributions will be reviewed, and once accepted, they will be merged into the project.
+
+# License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
