@@ -5,7 +5,7 @@ const Layout = () => {
         <div className = "container-fluid">
             <div className = "row justify-content-center mt-3">
                 <div className = "col-md-4 text-center">
-                    <p className = "lead">This is HNG Stage 3 Project for Frontend Track</p>
+                    <p className = "lead">Username: user@example.com ||  Password: 1Password</p>
                 </div>
                 <Outlet />
             </div>
